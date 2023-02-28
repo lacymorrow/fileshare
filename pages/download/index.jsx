@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Layout from 'components/layout.js'
+import Layout from 'components/layout'
 import Link from 'next/link'
 import { Component } from 'react'
 
@@ -14,18 +14,18 @@ export default class index extends Component {
         if (e.key === 'Enter') {
           console.log('wow');
         }
-      }); 
+      });
     }
   }
 
   handleMaxChars(e) {
-    
+
     if (e.target.innerHTML.includes('<br>')) {
       e.target.innerHTML = e.target.innerHTML.replace('<br>', '');
     }
 
     this.setState({ code: e.target.innerHTML });
-    
+
     if (e.which === 13) {
       document.querySelector('.button').click();
     }
@@ -47,9 +47,9 @@ export default class index extends Component {
 
         <main>
           <h2>Your code</h2>
-          <div 
-            className='textInput' 
-            contentEditable='true' 
+          <div
+            className='textInput'
+            contentEditable='true'
             type='text'
             onKeyUp={(e) => this.handleMaxChars(e)}>
           </div>

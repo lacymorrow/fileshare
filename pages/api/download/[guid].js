@@ -1,8 +1,7 @@
 import fs from 'fs'
-import path from 'path'
 
 export default function getData(req, res) {
-        
+
     const {
         query: { guid },
     } = req
@@ -17,7 +16,7 @@ export default function getData(req, res) {
             'Content-Length': stat.size,
             'Content-Disposition': 'attachment; filename=' + filePath
         });
-        
+
         var readStream = fs.createReadStream(filePath);
 
         readStream.on('open', function() {

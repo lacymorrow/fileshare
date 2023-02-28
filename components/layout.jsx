@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from 'components/Footer/footer.js'
+import Footer from 'components/Footer/footer'
 
 function Layout({ children }) {
     return (

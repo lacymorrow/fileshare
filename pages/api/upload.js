@@ -9,11 +9,11 @@ export const config = {
 };
 
 export default (req, res) => {
- 
+
     if (req.method === 'POST') {
         const guid = generateGUID();
         const form = new formidable.IncomingForm();
-        
+
         form.keepExtensions = true;
         form.maxFileSize = 10000 * 1024 * 1024;
 
@@ -46,6 +46,8 @@ export default (req, res) => {
         res.end()
     }
 }
+
+// TODO: Generate more sercure GUID
 
 const generateGUID = () => {
 

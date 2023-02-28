@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import { serverConfig } from 'server';
 import Head from 'next/head'
-import Layout from 'components/layout.js'
+import Layout from 'components/layout'
 import Link from 'next/link'
 
 const success = () => {
