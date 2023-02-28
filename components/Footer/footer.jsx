@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import styles from './footer.module.scss'
 import Link from 'next/link'
-import { Container } from '@nextui-org/react'
 
 export default function Footer() {
 	return (
@@ -19,13 +18,8 @@ export default function Footer() {
 
 			</div>
 
-			<a href='https://bryceyoder.com'>
-				<img src="/images/logo.svg" alt="Bryce Yoder" />
-			</a>
-
 			<a className={styles.siteLogo} href='https://bryceyoder.com' title='Bryce Yoder'>
-				Made with 💜 original code from{' '}
-				<a href='https://bryceyoder.com'>Bryce Yoder</a>
+				Made with 💜 original code from Bryce Yoder
 			</a>
 		</footer>
 	)

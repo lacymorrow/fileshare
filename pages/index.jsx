@@ -52,8 +52,8 @@ export default function Home() {
 					/>
 
 					<LinkCard
-						title='Retrieve Files'
-						body='Enter your email address and the code you received to retrieve your files.'
+						title='Provide your email (optional)'
+						body='Enter your email address to receive a list of your files.'
 						link='/secure'
 						linkText='Copy link to Clipboard'
 						faStyles='fas fa-compass'
