@@ -19,7 +19,7 @@ export default function Footer() {
 			</div>
 
 			<a className={styles.siteLogo} href='https://bryceyoder.com' title='Bryce Yoder'>
-				Made with 💜 original code from Bryce Yoder
+				💜 Based on code by Bryce Yoder
 			</a>
 		</footer>
 	)

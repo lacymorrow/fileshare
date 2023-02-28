@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import { Container, Grid, Spacer, Text, Textarea } from "@nextui-org/react";
+import { Container, Grid, Spacer, Text } from "@nextui-org/react";
 import Layout from 'components/Layout'
 import LinkCard from 'components/LinkCard/linkCard'
 import GradientTitle from 'components/GradientTitle/gradientTitle';
-import { SP } from 'next/dist/shared/lib/utils';
 import TextCard from 'components/TextCard/textCard';
 
 export default function Home() {
@@ -16,6 +15,8 @@ export default function Home() {
 			</Head>
 
 			<main>
+				<Spacer y={4} />
+
 				<Container lg>
 
 					<GradientTitle />
@@ -52,8 +53,8 @@ export default function Home() {
 					/>
 
 					<LinkCard
-						title='Provide your email (optional)'
-						body='Enter your email address to receive a list of your files.'
+						title='Want receipt notifications and access to an old post?'
+						body='Provide your email (optional)'
 						link='/secure'
 						linkText='Copy link to Clipboard'
 						faStyles='fas fa-compass'
