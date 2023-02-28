@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import TitleCard from 'components/TitleCard/titleCard.js'
-import Layout from 'components/layout.js'
-import LinkCard from 'components/LinkCard/linkCard.js'
+import TitleCard from 'components/TitleCard/titleCard'
+import Layout from 'components/Layout'
+import LinkCard from 'components/LinkCard/linkCard'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <TitleCard 
+        <TitleCard
           title = 'FILESHARE'
           text = 'Upload some files to share, or download files with a code.'
         />

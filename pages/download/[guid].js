@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import fs from 'fs-extra'
 import Head from 'next/head'
-import Layout from 'components/layout.js'
+import Layout from 'components/Layout'
 
 const downloadSuccess = (props) => {
 
@@ -13,7 +13,7 @@ const downloadSuccess = (props) => {
         if (!props.exists) {
             mainMessage = 'That code does not exist.';
             secondaryMessage = 'The download may have expired, or you may have typed the code incorrectly.';
-        } else { 
+        } else {
             if (!props.finished) {
                 mainMessage = 'Your download is still processing.';
                 secondaryMessage = 'Please check back later.';
@@ -37,7 +37,7 @@ const downloadSuccess = (props) => {
 
     const router = useRouter()
     const { guid } = router.query
-    var downloadTimeout; 
+    var downloadTimeout;
 
     if (process.browser) {
         if (props.exists && props.finished) {
@@ -97,7 +97,7 @@ export async function getServerSideProps(context) {
     const finished = !fs.existsSync('uploads/' + context.params.guid);
 
     return {
-        props: { 
+        props: {
             'exists' : exists,
             'finished' : finished
         },

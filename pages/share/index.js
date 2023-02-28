@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import TitleCard from 'components/TitleCard/titleCard.js'
-import Layout from 'components/layout.js'
-import UploadBox from 'components/UploadBox/uploadBox.js'
+import TitleCard from 'components/TitleCard/titleCard'
+import Layout from 'components/Layout'
+import UploadBox from 'components/UploadBox/uploadBox'
 
 export default function Home() {
     return (
