@@ -1,9 +1,10 @@
 html, body {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     font-family: korolev, sans-serif;
     font-weight: 500;
     font-style: normal;
+	max-width: 1200px;
 }
 a {
     color:black;
@@ -23,10 +24,9 @@ button, .button {
     font-family: inherit;
     font-weight: inherit;
     font-size: inherit;
-    
+
 }
 main {
-    width:80%;
     margin: 0 auto;
     text-align:center;
 }
@@ -52,12 +52,6 @@ main {
 
 .pad-bottom {
     padding-bottom: 120px;
-}
-
-@media screen and (max-width:1200px) {
-    main {
-        width: 85%;
-    }
 }
 
 @import url("https://use.typekit.net/phn1xtz.css");

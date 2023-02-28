@@ -33,6 +33,20 @@ export default function Home() {
             link='/download'
             linkText='Retrieve Files'
           />
+					   <LinkCard
+            faStyles='fas fa-file-upload'
+            title='Share Files'
+            body='Upload one or more files and receive a shareable link or code'
+            link='/share'
+            linkText='Share Files'
+          />
+          <LinkCard
+            faStyles='fas fa-file-download'
+            title='Download Files'
+            body='Have a link or code? Retrieve the files that have been shared with you.'
+            link='/download'
+            linkText='Retrieve Files'
+          />
         </div>
       </main>
 
