@@ -14,7 +14,7 @@ function GradientTitle(props) {
 				}}
 				weight="bold"
 			>
-				Luminai{' '}
+				Luminai{' '}&nbsp;
 			</Text>
 			<Text
 				h1
